@@ -1,22 +1,105 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+<ion-row>
+  <ion-col id="img" size="12" size-lg="6" >
+    
+  </ion-col>
+ 
+
+  <ion-col size="12" size-lg="6" class="coluna" >
+
+    
+    <ion-row>
+      <ion-col >
+        <div class="ion-text-center">
+        <ion-label id="texto">Criar conta</ion-label> 
+      </div>
+      </ion-col>
+    </ion-row>
+ 
+
+    <ion-list>
+      <ion-list>
+
+        <ion-row class="ion-justify-content-center">
+          <ion-col size = 6>
+            <ion-item class=>
+              <ion-input label="Nome"></ion-input>
+            </ion-item>
+            
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row class="ion-justify-content-center">
+          <ion-col size = 6>
+            <ion-item>
+              <ion-input label="Email" type="email"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row class="ion-justify-content-center">
+          <ion-col size = 6>
+            <ion-item>
+              <ion-input label="Senha" type="password" value="password"></ion-input>
+          </ion-item>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row class="ion-justify-content-center">
+          <ion-col size = 6>
+            <ion-item>
+              <ion-input label="Confirmar Senha" type="password" value="password"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+      </ion-list>
+    </ion-list>
+
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center">
+        <ion-button color="success">Criar Conta</ion-button>
+      </div>
+    </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center">
+        <p>Login com</p>
+      </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center">
+        <ion-button class="face" color="tertiary">Facebook</ion-button>
+      </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+      <div class="ion-text-center">
+        <ion-button color="secondary">Twitter</ion-button>
+      </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center">
+        <ion-button color="danger">Google</ion-button>
+      </div>
+      </ion-col>
+    </ion-row>
+    
+
+  </ion-col>
+</ion-row>
+
 </ion-content>
