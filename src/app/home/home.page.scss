@@ -1,18 +1,19 @@
 .calendario{
   &__foto{
-    height: 22rem;
-    width: 30rem;;
+    margin-left: -1rem;
+    height: 33rem;
+    width: 47.8rem;;
   }
 
   &__mes{
     font-size: 1rem;
-    color: #2B0B59;
-  
+    color: white;
+    width: 150px;
   }
 
   &__ano{
     font-size: 1rem;
-    color: #2B0B59;
+    color: white;
   }
 
   &__dia-semana{ 
@@ -24,4 +25,10 @@
     font-size: 1rem;
     color: #F2A25C;
   }
+}
+
+.linha_mesano{
+  background-color: #7033c5;
+  width: 48rem;
+  border-radius: 3px;
 }
