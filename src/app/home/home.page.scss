@@ -1,20 +1,27 @@
-ion-content{
-  height: 100%;
-  width: 100%;
-  margin: 0;
+.calendario{
+  &__foto{
+    height: 22rem;
+    width: 30rem;;
+  }
+
+  &__mes{
+    font-size: 1rem;
+    color: #2B0B59;
+  
+  }
+
+  &__ano{
+    font-size: 1rem;
+    color: #2B0B59;
+  }
+
+  &__dia-semana{ 
+    font-size: 1rem;
+    color: #F28066;
+  }
+
+  &__dia{
+    font-size: 1rem;
+    color: #F2A25C;
+  }
 }
-
-#texto{
-  font-size: 50px;
-  font-weight: bold;
-}
-#img{
-  background-image: url("https://images.pexels.com/photos/6302137/pexels-photo-6302137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-
-
