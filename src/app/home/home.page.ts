@@ -107,5 +107,9 @@ export class HomePage {
       this.tela = novoCalc 
     }
   }
+<<<<<<< HEAD
 }
 //feito por Pedro e Thay
+=======
+}
+>>>>>>> 2d5603d (commit teste)
