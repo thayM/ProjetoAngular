@@ -10,7 +10,7 @@
     </ion-row>
     <ion-row>
       <ion-col size="12">
-        <ion-input type="text" id="resultado" disabled>A</ion-input>
+        <ion-input type="text" id="resultado" disabled>{{this.resultado}}</ion-input>
       </ion-col>
     </ion-row>
     </div>
@@ -25,7 +25,7 @@
         <ion-button color="danger" (click)="del()">DEL</ion-button>
       </ion-col>
       <ion-col >
-        <ion-button color="light" (click)="setTecla('%')">%</ion-button>
+        <ion-button color="light" (click)="porcentagem()">%</ion-button>
       </ion-col>
       <ion-col >
         <ion-button color="light" (click)="setTecla('/')">/</ion-button>
@@ -83,7 +83,7 @@
     <!-- linha 5 -->
     <ion-row class="botao">
       <ion-col >
-        <ion-button color="light">+/-</ion-button>
+        <ion-button color="light" (click)="trocaSinal()">+/-</ion-button>
       </ion-col>
       <ion-col >
         <ion-button (click)="setTecla('0')">0</ion-button>
@@ -92,7 +92,7 @@
         <ion-button (click)="setTecla('.')">.</ion-button>
       </ion-col>
       <ion-col >
-        <ion-button color="danger" (click)="calc()">=</ion-button>
+        <ion-button color="danger" (click)="calc()" >=</ion-button>
       </ion-col>
     </ion-row>
   </div>
