@@ -108,3 +108,4 @@ export class HomePage {
     }
   }
 }
+//feito por Pedro e Thay
