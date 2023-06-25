@@ -9,5 +9,25 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule],
 })
 export class HomePage {
-  constructor() {}
+  tela : any = ""
+
+  setTecla(num: any){
+    this.tela += num
+  }
+  calc(){
+    if (this.tela != "") {
+      let calculo:any = this.tela
+      this.tela = eval(calculo);
+  } else {
+      this.tela = ""
+  }
+  }
+  limparTela(){
+    this.tela =""
+  }
+  del() {
+    let resultNumber = this.tela;
+    this.tela = resultNumber.substring(0, resultNumber.length - 1);
+}
+
 }
