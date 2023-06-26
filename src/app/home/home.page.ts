@@ -38,7 +38,21 @@ export class HomePage {
 
   //Adicionar Tecla dentro da expressão numerica
   setTecla(num: any){
-    this.tela += num
+    // Resetando o calc
+    if(num == "0" || num == "1" ||num == "2" ||num == "3" ||num == "4" ||num == "5" ||num == "6" ||num == "7" ||num == "8" ||num == "9" ){
+      let index = this.tela.length - 1
+      if(this.tela[index] == "="){
+        this.tela = ""
+        this.resultado = ""
+        this.tela += num
+      }
+      else{
+        this.tela+=num
+      }
+    }
+    else{
+      this.tela += num
+    }
   }
 
   //Funções para calculo 
