@@ -1,200 +1,42 @@
-<ion-content [fullscreen]="true">
- <!-- <ion-row class="calculadora"> -->
-<div class="body">
-    <!-- resultado -->
-    <div class="resultado">
-    <ion-row>
-      <ion-col size="12">
-        <ion-input type="text" id="tela" disabled>{{this.tela}}</ion-input>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12">
-        <ion-input type="text" id="resultado" disabled>{{this.resultado}}</ion-input>
-      </ion-col>
-    </ion-row>
-    </div>
+<ion-button class="btnn" (click)="setTecla('6')">6</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button class="btnSinal" (click)="setTecla('-')">-</ion-button>
+</ion-col>
+</ion-row>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <!-- resultado -->
-    <div class="resultado">
-    <ion-row>
-      <ion-col size="12">
-        <ion-input type="text" id="tela" disabled>{{this.tela}}</ion-input>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12">
-        <ion-input type="text" id="resultado" disabled>{{this.resultado}}</ion-input>
-      </ion-col>
-    </ion-row>
-    </div>
+<!-- linha 4 -->
+<ion-row class="botao">
+<ion-col>
+  <ion-button class="btnn" (click)="setTecla('1')">1</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button class="btnn" (click)="setTecla('2')">2</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button class="btnn" (click)="setTecla('3')">3</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button class="btnSinal" (click)="setTecla('+')">+</ion-button>
+</ion-col>
+</ion-row>
 
-=======
->>>>>>> 9182596 (css final)
-    <div class="teclas">
-    <!-- linha 1 -->
-    <ion-row class="botao">
-      <ion-col>
-<<<<<<< HEAD
-        <ion-button color="danger" (click)="limparTela()">AC</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button color="danger" (click)="del()">DEL</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button color="light" (click)="porcentagem()">%</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button color="light" (click)="setTecla('/')">/</ion-button>
-=======
-        <ion-button class="danger" (click)="limparTela()">AC</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button class="danger" (click)="del()"><ion-icon name="backspace"></ion-icon></ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button class="btnSinal" (click)="porcentagem()">%</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button class="btnSinal" (click)="setTecla('/')">/</ion-button>
->>>>>>> 9182596 (css final)
-      </ion-col>
-    </ion-row>
-
-    <!-- linha 2 -->
-    <ion-row class="botao">
-      <ion-col>
-<<<<<<< HEAD
-        <ion-button (click)="setTecla('7')">7</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button (click)="setTecla('8')">8</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button (click)="setTecla('9')">9</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button color="light" (click)="setTecla('*')">x</ion-button>
-=======
-        <ion-button class="btnn" (click)="setTecla('7')">7</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnn" (click)="setTecla('8')">8</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnn" (click)="setTecla('9')">9</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnSinal" (click)="setTecla('*')">x</ion-button>
->>>>>>> 9182596 (css final)
-      </ion-col>
-    </ion-row>
-
-    <!-- linha 3 -->
-    <ion-row class="botao">
-      <ion-col>
-<<<<<<< HEAD
-        <ion-button (click)="setTecla('4')">4</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button (click)="setTecla('5')">5</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button (click)="setTecla('6')">6</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button color="light" (click)="setTecla('-')">-</ion-button>
-=======
-        <ion-button class="btnn" (click)="setTecla('4')">4</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnn" (click)="setTecla('5')">5</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnn" (click)="setTecla('6')">6</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnSinal" (click)="setTecla('-')">-</ion-button>
->>>>>>> 9182596 (css final)
-      </ion-col>
-    </ion-row>
-
-    <!-- linha 4 -->
-    <ion-row class="botao">
-      <ion-col>
-<<<<<<< HEAD
-        <ion-button (click)="setTecla('1')">1</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button (click)="setTecla('2')">2</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button (click)="setTecla('3')">3</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button color="light" (click)="setTecla('+')">+</ion-button>
-=======
-        <ion-button class="btnn" (click)="setTecla('1')">1</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnn" (click)="setTecla('2')">2</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnn" (click)="setTecla('3')">3</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="btnSinal" (click)="setTecla('+')">+</ion-button>
->>>>>>> 9182596 (css final)
-      </ion-col>
-    </ion-row>
-
-    <!-- linha 5 -->
-    <ion-row class="botao">
-      <ion-col >
-<<<<<<< HEAD
-        <ion-button color="light" (click)="trocaSinal()">+/-</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button (click)="setTecla('0')">0</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button (click)="setTecla('.')">.</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button color="danger" (click)="calc()" >=</ion-button>
-      </ion-col>
-    </ion-row>
-=======
-  <!-- resultado -->
-  <div class="resultado">
-  <ion-row>
-    <ion-col size="12">
-      <ion-input type="text" id="tela" disabled>{{this.tela}}</ion-input>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col size="12">
-      <ion-input type="text" id="resultado" disabled>{{this.resultado}}</ion-input>
-    </ion-col>
-  </ion-row>
->>>>>>> 2d5603d (commit teste)
-=======
-        <ion-button class="btnSinal" (click)="trocaSinal()">+/-</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button class="btnn" (click)="setTecla('0')">0</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button class="btnSinal" (click)="setTecla('.')">.</ion-button>
-      </ion-col>
-      <ion-col >
-        <ion-button class="btnIgual" (click)="calc()" >=</ion-button>
-      </ion-col>
-    </ion-row>
-    </div>
->>>>>>> 9182596 (css final)
-  </div>
+<!-- linha 5 -->
+<ion-row class="botao">
+<ion-col >
+  <ion-button class="btnSinal" (click)="trocaSinal()">+/-</ion-button>
+</ion-col>
+<ion-col >
+  <ion-button class="btnn" (click)="setTecla('0')">0</ion-button>
+</ion-col>
+<ion-col >
+  <ion-button class="btnSinal" (click)="setTecla('.')">.</ion-button>
+</ion-col>
+<ion-col >
+  <ion-button class="btnIgual" (click)="calc()" >=</ion-button>
+</ion-col>
+</ion-row>
+</div>
+</div>
 </ion-content>
 <!-- feito por Pedro e Thay -->

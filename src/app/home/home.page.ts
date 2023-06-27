@@ -90,10 +90,6 @@ export class HomePage {
    }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 78e72d3 (aa)
   porcentagem(){
   let array = this.tela.length
   let numParaPorcentagemInvertido = ""
@@ -125,47 +121,4 @@ export class HomePage {
       this.tela = novoCalc 
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-//feito por Pedro e Thay
-=======
-}
->>>>>>> 2d5603d (commit teste)
-=======
-//   porcentagem(){
-//   let array = this.tela.length
-//   let numParaPorcentagemInvertido = ""
-//   //tamanho do ultimo numero para futura substituição 
-//   let qtdAlgori = 0
-//   for (let index = array-1; index >= 0; index--) {
-//     if(this.tela[index] != "-" && this.tela[index] != "+" && this.tela[index] != "/" && this.tela[index] != "*"){
-//       qtdAlgori++
-//     }else{
-//       index = 0
-//     }
-//   }
-//   //identificando os numeros da equação 
-//   for (let index = array-1; index >= 0; index--) {
-//       if(this.tela[index] != "-" && this.tela[index] != "+" && this.tela[index] != "/" && this.tela[index] != "*"){
-//         numParaPorcentagemInvertido += `${this.tela[index]}`
-//       }else{
-//         numParaPorcentagemInvertido +=","
-//       }
-//   }
-//   //Substituindo o valor da porcentagem dentro da expressão numerica
-//   let numeros = numParaPorcentagemInvertido.split(",")
-//     if (numeros.length <= 1) {
-//       this.tela = "SintaxError"
-//     }
-//     else{
-//       let numParaPorcentagem = eval(`(${this.inverterString(numeros[0])}*${this.inverterString(numeros[1])})/100`)
-//       let novoCalc = `${this.tela.substring(0,(array-qtdAlgori))}(${numParaPorcentagem})`
-//       this.tela = novoCalc 
-//     }
-//   }
-// }
->>>>>>> 25855f1 (teste)
-=======
-}
->>>>>>> 78e72d3 (aa)
