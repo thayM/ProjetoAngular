@@ -22,6 +22,7 @@ export class HomePage {
     console.log(textoInvertido)
     return textoInvertido;
   }
+
   //Funções basicas da calculadora
 
   //Resetar a calculadora
@@ -37,22 +38,42 @@ export class HomePage {
   }
 
   //Adicionar Tecla dentro da expressão numerica
-  setTecla(num: any){
+  setTecla(teclas: any){
+    let index = this.tela.length-1
     // Resetando o calc
-    if(num == "0" || num == "1" ||num == "2" ||num == "3" ||num == "4" ||num == "5" ||num == "6" ||num == "7" ||num == "8" ||num == "9" ){
-      let index = this.tela.length - 1
+    if(teclas == "0" || teclas == "1" ||teclas == "2" ||teclas == "3" ||teclas == "4" ||teclas == "5" ||teclas == "6" ||teclas == "7" ||teclas == "8" ||teclas == "9" ){
+      console.log(index)
       if(this.tela[index] == "="){
         this.tela = ""
         this.resultado = ""
-        this.tela += num
+        this.tela += teclas
       }
       else{
-        this.tela+=num
+        this.tela+=teclas
       }
     }
-    else{
-      this.tela += num
+    // Verificando a duplicidade de sinais
+    if(teclas == "+" || teclas == "-" || teclas == "/" || teclas == "*"){
+      console.log(this.tela[index])    
+      if(this.tela[index] == "="){
+        this.tela += ""
+      }else{
+      if(this.tela[index] == "+" || this.tela[index] == "-" || this.tela[index] == "/" || this.tela[index] == "*"){
+        this.tela+= ""
+      }else{
+        this.tela+= teclas
+      }
+      }
     }
+
+    //Verificando o posicionamento do ponto
+    if(teclas == "."){
+      console.log(this.tela[index])
+      if(this.tela[index] == "0" || this.tela[index] == "1" || this.tela[index] == "2" || this.tela[index] == "3"  || this.tela[index] == "4" || this.tela[index] == "5"  || this.tela[index] == "6" || this.tela[index] == "7" || this.tela[index] == "8" || this.tela[index] == "9"){
+        this.tela+= teclas
+      }
+    }
+    console.log(this.tela)
   }
 
   //Funções para calculo 

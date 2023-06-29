@@ -1,6 +1,10 @@
 // #A1A2A6 -> cinza claro
 // #585859 -> cinza escuro
 
+ion-content{
+  --background: #03160e;
+}
+
 .resultado, .teclas{
   margin-left: 45vh;
   margin-top: 10vh;
@@ -14,7 +18,7 @@
 }
 
 #tela, #resultado{
-  margin-left: 30px;
+  margin-right: 3%;
 }
 
 #tela{
